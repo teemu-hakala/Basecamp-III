@@ -17,6 +17,6 @@ void	ft_print_alphabet(void)
 	char	alphabet;
 
     alphabet = 'a';
-	while ('a' <= alphabet && alphabet <= 'z')
+	while ('a' >= alphabet && alphabet <= 'z')
 		ft_putchar(alphabet++);
 }
