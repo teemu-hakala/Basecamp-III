@@ -10,18 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_putchar(char character);
+void	ft_putchar(char character);
 
 void	ft_print_alphabet(void)
 {
-	char	*alphabet;
-	int		i;
+	char	alphabet;
 
-	alphabet = "abcdefghijklmnopqrstuvwxyz\0";
-	i = 0;
-	while (alphabet[i] != '\0')
-	{
-		ft_putchar(alphabet[i]);
-		i++;
-	}
+    alphabet = 'a';
+	while ('a' <= alphabet && alphabet <= 'z')
+		ft_putchar(alphabet++);
 }
