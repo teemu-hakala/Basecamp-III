@@ -6,13 +6,13 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 07:41:31 by teemuhakala       #+#    #+#             */
-/*   Updated: 2021/09/19 20:35:53 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/02 21:54:10 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-int		max_digit_check(int number, int n)
+int	max_digit_check(int number, int n)
 {
 	int		digit_count;
 	int		digit;
@@ -31,7 +31,7 @@ int		max_digit_check(int number, int n)
 	return (1);
 }
 
-int		push_digit_further(int num, int n)
+int	push_digit_further(int num, int n)
 {
 	int		result;
 	int		digit_count;
@@ -65,7 +65,7 @@ int		push_digit_further(int num, int n)
 	return (result);
 }
 
-int		digit_order_check(int num, int n)
+int	digit_order_check(int num, int n)
 {
 	int		result;
 	int		k;
@@ -93,7 +93,7 @@ int		digit_order_check(int num, int n)
 	return (result);
 }
 
-int		grow_num(int num, int n)
+int	grow_num(int num, int n)
 {
 	int		k;
 

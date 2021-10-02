@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 06:52:29 by thakala           #+#    #+#             */
-/*   Updated: 2021/09/27 20:13:57 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/02 21:52:01 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_print_alphabet(void)
 {
 	char	alphabet;
 
-    alphabet = 'a';
+	alphabet = 'a';
 	while ('a' <= alphabet && alphabet <= 'z')
 		ft_putchar(alphabet++);
 }

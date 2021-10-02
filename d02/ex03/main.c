@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 13:55:58 by thakala           #+#    #+#             */
-/*   Updated: 2021/08/18 17:53:28 by thakala          ###   ########.fr       */
+/*   Updated: 2021/10/02 21:52:51 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int		ft_putchar(char character)
+int	ft_putchar(char character)
 {
 	write(1, &character, 1);
 	return (0);
@@ -20,7 +20,7 @@ int		ft_putchar(char character)
 
 void	ft_is_negative(int integer);
 
-int		main(void)
+int	main(void)
 {
 	ft_is_negative(-1);
 	ft_is_negative(0);
