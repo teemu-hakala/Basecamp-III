@@ -6,11 +6,11 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/09/21 13:25:29 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/03 17:16:00 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_find_next_prime(int nb)
+int	ft_find_next_prime(int nb)
 {
 	int		test;
 	int		condition;
@@ -21,7 +21,7 @@ int		ft_find_next_prime(int nb)
 	if (nb % 2 == 0)
 		nb++;
 	condition = test * test;
-	while (condition < nb)
+	while (condition <= nb)
 	{
 		if (nb % test == 0)
 		{
