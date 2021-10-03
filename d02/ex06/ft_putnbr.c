@@ -6,7 +6,7 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 18:01:31 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/03 09:07:18 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/03 11:16:39 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putnbr(int number)
 	if (number < 0)
 	{
 		ft_putchar('-');
-		if (number == (int)(~0u))
+		if (number == -2147483648)
 		{
 			ft_putnbr((int)(~0u >> 1) / 10);
 			ft_putnbr(8);
@@ -31,7 +31,5 @@ void	ft_putnbr(int number)
 		ft_putnbr(number % 10);
 	}
 	else
-	{
 		ft_putchar('0' + number);
-	}
 }
