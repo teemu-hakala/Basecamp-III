@@ -6,11 +6,11 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/09/21 11:18:32 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/03 16:20:47 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_is_prime(int nb)
+int	ft_is_prime(int nb)
 {
 	int		test;
 	int		condition;
@@ -21,7 +21,7 @@ int		ft_is_prime(int nb)
 		return (0);
 	test = 2 + 1;
 	condition = test * test;
-	while (condition < nb)
+	while (condition <= nb)
 	{
 		if (nb % test == 0)
 			return (0);

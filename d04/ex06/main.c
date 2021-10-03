@@ -6,7 +6,7 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/03 15:19:58 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/03 16:17:00 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	main(void)
 	int		eratosthenes;
 
 	i = -1;
-	multiple = 0;
+	multiple = 1;
 	multiple2 = 1;
 	eratosthenes = 0;
 	if (multiple == 1)
