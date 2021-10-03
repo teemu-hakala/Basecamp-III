@@ -6,7 +6,7 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 18:01:28 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/02 21:53:15 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/03 08:54:51 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_print_comb2(void)
 
 	i = 0;
 	j = 1;
-	while (i <= 99)
+	while (i <= 98)
 	{
 		while (j <= 99)
 		{

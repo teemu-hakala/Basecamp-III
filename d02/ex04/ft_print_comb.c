@@ -3,16 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 14:38:25 by thakala           #+#    #+#             */
-/*   Updated: 2021/08/20 13:40:01 by thakala          ###   ########.fr       */
+/*   Updated: 2021/10/03 08:51:52 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 int		ft_putchar(char character);
+
+void	ft_putdigits(int i, int j, int k)
+{
+	ft_putchar('0' + i);
+	ft_putchar('0' + j);
+	ft_putchar('0' + k);
+}
 
 void	ft_print_comb(void)
 {
@@ -29,12 +36,11 @@ void	ft_print_comb(void)
 		{
 			while (k <= 9)
 			{
-				ft_putchar('0' + i);
-				ft_putchar('0' + j);
-				ft_putchar('0' + k);
+				ft_putdigits(i, j, k);
 				if (!(k++ == 9 && i == 7 && j == 8))
 				{
-					write(1, ", ", 2);
+					ft_putchar(',');
+					ft_putchar(' ');
 				}
 			}
 			k = ++j + 1;

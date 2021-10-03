@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 13:15:23 by thakala           #+#    #+#             */
-/*   Updated: 2021/08/18 17:51:00 by thakala          ###   ########.fr       */
+/*   Updated: 2021/10/03 08:46:39 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	ft_print_numbers(void)
 	char	number;
 
 	number = '0';
-	while (number != '9' + 1)
-	{
+	while (number <= '9')
 		ft_putchar(number++);
-	}
 }

@@ -51,5 +51,18 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-#JetBrains Idea
+# JetBrains Idea
 .idea
+
+# .vscode
+.vscode/
+
+# d02
+d02/ex00/ft_print_alphabet
+d02/ex01/ft_print_reverse_alphabet
+d02/ex02/ft_print_numbers
+d02/ex03/ft_is_negative
+d02/ex04/ft_print_comb
+d02/ex05/ft_print_comb2
+d02/ex06/ft_putnbr
+d02/ex07/ft_print_combn
