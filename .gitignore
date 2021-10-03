@@ -66,3 +66,15 @@ d02/ex04/ft_print_comb
 d02/ex05/ft_print_comb2
 d02/ex06/ft_putnbr
 d02/ex07/ft_print_combn
+
+# d03
+d03/ex00/ft_ft
+d03/ex01/ft_ultimate_ft
+d03/ex02/ft_swap
+d03/ex03/ft_div_mod
+d03/ex04/ft_ultimate_div_mod
+d03/ex05/ft_putstr
+d03/ex06/ft_strlen
+d03/ex07/ft_strrev
+d03/ex08/ft_atoi
+d03/ex09/ft_sort_integer_table
