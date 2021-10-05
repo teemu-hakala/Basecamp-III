@@ -6,17 +6,18 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/04 19:07:49 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/05 08:23:16 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdio.h>
+#include <string.h>
 
-void	ft_putstr(char *str);
+void	ft_putchar(char c);
 
 char	*ft_strcat(char *dest, char *src);
 
-int	main(void)
+int	main_(void)
 {
 	char	battlecry[50] = "The Meaning \0f Life";
 	int		i;
@@ -29,4 +30,9 @@ int	main(void)
 	i = 0;
 	while (i < 50)
 		ft_putchar(battlecry[i++]);
+	char string1[70] = "sun";
+//	char string1[25];
+	char string2[] = " dance " ;
+	printf(" strcat:%s\n", strcat(string1, string2));
+	printf(" ft_strcat:%s\n", ft_strcat(string1, string2));
 }
