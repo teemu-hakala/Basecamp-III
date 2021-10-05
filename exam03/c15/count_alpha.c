@@ -6,10 +6,11 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 18:39:02 by teemuhakala       #+#    #+#             */
-/*   Updated: 2021/10/04 20:05:46 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/05 09:24:21 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #define ALPHABET_COUNT 26
 
 typedef struct s_ac
