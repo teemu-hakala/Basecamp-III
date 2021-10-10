@@ -6,22 +6,22 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 16:45:53 by teemuhakala       #+#    #+#             */
-/*   Updated: 2021/09/13 17:06:50 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/10 14:49:44 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int		result;
 	int		coefficient;
 
 	result = 0;
 	coefficient = 1;
-	while (*str == ' ' || *str == '\n' || *str == '\r' || *str == '\v' || *str == '\t' || *str == '\f')
+	while ((*str >= '\t' && *str <= '\r') || *str == ' ')
 		str++;
 	if (*str == '+')
 		str++;
-	else if(*str == '-')
+	else if (*str == '-')
 	{
 		coefficient = -1;
 		str++;
