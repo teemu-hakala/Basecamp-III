@@ -6,7 +6,7 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 11:11:37 by teemuhakala       #+#    #+#             */
-/*   Updated: 2021/10/10 12:40:41 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/10 14:42:29 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,12 @@ int	main(void)
 	ft_putstr(ft_strrev(str));
 	write(1, "\n", 1);
 	str = ft_strcpy(str, "defg");
+	ft_putstr(ft_strrev(str));
+	write(1, "\n", 1);
+	str = ft_strcpy(str, "o");
+	ft_putstr(ft_strrev(str));
+	write(1, "\n", 1);
+	str = ft_strcpy(str, "");
 	ft_putstr(ft_strrev(str));
 	write(1, "\n", 1);
 	free(str);
