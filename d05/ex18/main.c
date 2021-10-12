@@ -6,21 +6,75 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/04 19:34:56 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/12 11:12:27 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdlib.h>
+#include <string.h>
+#define LEN 50
 
-char	*ft_strlcat(char *dest, char *src, unsigned int size);
+void			ft_putchar(char c);
+
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+
+char	*ft_strcpy(char *dest, char *src)
+{
+	char	*result;
+
+	result = dest;
+	while (*src)
+		*dest++ = *src++;
+	*dest = *src;
+	return (result);
+}
+
+void	ft_putnbr_pos(unsigned int n)
+{
+	if (n > 9)
+	{
+		ft_putnbr_pos(n / 10);
+		ft_putnbr_pos(n % 10);
+	}
+	else if (n >= 0)
+		ft_putchar(n + '0');
+}
+
+void	ft_test(char *ft_battlecry, char *battlecry, char *base, char *addition,
+	int length)
+{
+	int		i;
+
+	ft_strcpy(ft_battlecry, base);
+	ft_putnbr_pos(ft_strlcat(ft_battlecry, addition, length));
+	ft_putchar(':');
+	i = 0;
+	while (i < LEN)
+		ft_putchar(ft_battlecry[i++]);
+	ft_putchar('\n');
+	ft_strcpy(battlecry, base);
+	ft_putnbr_pos(strlcat(battlecry, addition, length));
+	ft_putchar(':');
+	i = 0;
+	while (i < LEN)
+		ft_putchar(battlecry[i++]);
+	ft_putchar('\n');
+}
 
 int	main(void)
 {
-	char	battlecry[50] = "Hakkapeliitta";
-	int		i;
+	char	*ft_battlecry;
+	char	*battlecry;
 
-	ft_strlcat(battlecry, "-sotahuuto", 20);
-	i = 0;
-	while (i < 50)
-		ft_putchar(battlecry[i++]);
+	ft_battlecry = (char *)malloc(sizeof(*ft_battlecry) * LEN);
+	battlecry = (char *)malloc(sizeof(*battlecry) * LEN);
+	ft_test(ft_battlecry, battlecry, "Hakkapeliitta", "-sotahuuto", 20);
+	ft_test(ft_battlecry, battlecry, "Hakkapeliittaa", "", 12);
+	ft_test(ft_battlecry, battlecry, "Hakkapeliitta", "otuuhatos-", 13);
+	ft_test(ft_battlecry, battlecry, "H", "otuuhatos-", 30);
+	ft_test(ft_battlecry, battlecry, "", "", 10);
+	ft_test(ft_battlecry, battlecry, "Hakka", "peliitta", 0);
+	ft_test(ft_battlecry, battlecry, "Hakka", "peliitta", 14);
+	free(ft_battlecry);
+	free(battlecry);
 }
