@@ -6,7 +6,7 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/12 11:12:27 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/12 11:14:03 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,11 @@ void	ft_test(char *ft_battlecry, char *battlecry, char *base, char *addition,
 		ft_putchar(battlecry[i++]);
 	ft_putchar('\n');
 }
+
+/*
+** gcc -Wall -Wextra -Werror ft_strlcat.c ft_putchar.c main.c -o ft_strlcat
+** ./ft_strlcat | cat -e
+*/
 
 int	main(void)
 {
