@@ -1,0 +1,9 @@
+a.out
+ft_swap.o
+ft_strlen.o
+ft_putstr.o
+ft_putchar.o
+ft_strcmp.o
+main.c
+libft.a
+ft_putchar_.c
