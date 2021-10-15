@@ -120,6 +120,9 @@ d05/ex21/ft_atoi_base
 d05/ex22/ft_putstr_non_printable
 d05/ex23/ft_print_memory
 
+# BSQ
+bsq/bsq
+
 # exam03 (final exam)
 exam03/c09/strrev
 exam03/c09/ft_strrev
