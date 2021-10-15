@@ -6,13 +6,18 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/12 11:14:03 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/15 12:02:34 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <string.h>
+#include <bsd/string.h>
 #define LEN 50
+
+/*
+** gcc -Wall -Wextra -Werror -g *.c -o ft_strlcat -lbsd
+** valgrind --tool=memcheck ./ft_strlcat
+*/
 
 void			ft_putchar(char c);
 
@@ -36,7 +41,7 @@ void	ft_putnbr_pos(unsigned int n)
 		ft_putnbr_pos(n / 10);
 		ft_putnbr_pos(n % 10);
 	}
-	else if (n >= 0)
+	else
 		ft_putchar(n + '0');
 }
 
@@ -70,9 +75,16 @@ int	main(void)
 {
 	char	*ft_battlecry;
 	char	*battlecry;
+	int		i;
 
 	ft_battlecry = (char *)malloc(sizeof(*ft_battlecry) * LEN);
 	battlecry = (char *)malloc(sizeof(*battlecry) * LEN);
+	i = 0;
+	while (i < LEN)
+	{
+		ft_battlecry[i] = 0;
+		battlecry[i++] = 0;
+	}
 	ft_test(ft_battlecry, battlecry, "Hakkapeliitta", "-sotahuuto", 20);
 	ft_test(ft_battlecry, battlecry, "Hakkapeliittaa", "", 12);
 	ft_test(ft_battlecry, battlecry, "Hakkapeliitta", "otuuhatos-", 13);
