@@ -6,15 +6,16 @@
 /*   By: teemuhakala <teemuhakala@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 03:51:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/10/15 12:02:34 by teemuhakala      ###   ########.fr       */
+/*   Updated: 2021/10/15 12:08:52 by teemuhakala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <bsd/string.h>
+#include <string.h>
 #define LEN 50
 
 /*
+** #include <bsd/string.h>
 ** gcc -Wall -Wextra -Werror -g *.c -o ft_strlcat -lbsd
 ** valgrind --tool=memcheck ./ft_strlcat
 */
